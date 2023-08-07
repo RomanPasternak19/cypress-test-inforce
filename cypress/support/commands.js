@@ -23,3 +23,28 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+Cypress.Commands.add('addToCart', (itemNames) => {
+    cy.get('.inventory_list').within(() => {
+        itemNames.forEach((itemName) => {
+            cy.contains('.inventory_item_name', itemName)
+                .parents('.inventory_item')
+                .within(() => {
+                    cy.get('.btn_primary.btn_inventory').click();
+            });
+        });
+    });
+});
+
+Cypress.Commands.add('fillCheckoutInformation', (firstName, lastName, postalCode) => {
+    cy.get('[data-test=firstName]').type(firstName);
+    cy.get('[data-test=lastName]').type(lastName);
+    cy.get('[data-test=postalCode]').type(postalCode);
+});
+
+Cypress.Commands.add('login', (username, password) => { 
+    cy.get('[data-test="username"]').type(username);
+    cy.get('[data-test="password"]').type(password);
+
+    cy.get('[data-test="login-button"]').click();
+})

@@ -1,0 +1,35 @@
+{
+    "baseUrl": "https://www.saucedemo.com/",
+    "completeHeaderText": "Thank you for your order!",
+    "completeInfoText": "Your order has been dispatched, and will arrive just as fast as the pony can get there!",
+    "completePageRoute": "checkout-complete.html",
+    "invalidPassword": "invalid_password",
+    "invalidUsername": "invalid_user",
+    "invalidUserErrorText": "Username and password do not match any user in this service",
+    "itemPrices": {
+        "Sauce Labs Backpack": 29.99,
+        "Sauce Labs Bolt T-Shirt": 15.99,
+        "Sauce Labs Onesie": 7.99
+    },
+    "lockedUsername": "locked_out_user",
+    "loginPageLogoText": "Swag Labs",
+    "mainPageLogoText": "Swag Labs",
+    "mainPageRoute": "inventory.html",
+    "placeholderPasswordText": "Password",
+    "placeholderUsernameText": "Username",
+    "somePassword": "some_password",
+    "someUsername": "some_username",
+    "taxRate": 0.08,
+    "validPassword": "secret_sauce",
+    "validUsername": "standard_user",
+    "yourInfo": {
+        "firstName": "John",
+        "lastName": "Doe",
+        "postalCode": "12345"
+    },
+    "inventoryItemsNameText": [
+        "Sauce Labs Backpack",
+        "Sauce Labs Bolt T-Shirt",
+        "Sauce Labs Onesie"
+    ]
+}
