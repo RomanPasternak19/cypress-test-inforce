@@ -16,7 +16,13 @@ describe('Login Pages', () => {
     const mainPage = new MainPage();
 
     beforeEach(() => {
+        cy.intercept('/').as('matchedUrl');
+
         loginPage.visit();
+        
+        cy.wait('@matchedUrl').then(({response}) => {
+            expect(response.statusCode).to.eq(200);
+        });
     });
 
     it('Check that the page is loaded successfully', () => {
