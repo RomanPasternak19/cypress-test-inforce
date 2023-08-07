@@ -5,6 +5,6 @@ cd cypress-test-inforce
 
 npm i 
 
-npx cypress open
+npm run cypress:open
 
-npx cypress run
+npm run cypress:run
