@@ -25,11 +25,11 @@ describe('Shopping Cart', () => {
     it('Should add items to the cart and update cart icon', () => {
         cy.addToCart(inventoryItemsNameText);
         
-        mainPage.verifyNumberOfItemsOnCartIcon(inventoryItemsNameText.length());
+        mainPage.verifyNumberOfItemsOnCartIcon(inventoryItemsNameText.length);
 
         mainPage.openShoppingCart();
 
-        cartPage.verifyCartItemsCount(inventoryItemsNameText.length());
+        cartPage.verifyCartItemsCount(inventoryItemsNameText.length);
     });
 
     it('Should add items to the cart, proceed to checkout, and verify items for checkout', () => {
@@ -37,7 +37,7 @@ describe('Shopping Cart', () => {
 
         mainPage.openShoppingCart();
 
-        cartPage.verifyCartItemsCount(inventoryItemsNameText.length());
+        cartPage.verifyCartItemsCount(inventoryItemsNameText.length);
         cartPage.verifyCartItemNames(inventoryItemsNameText);
 
         cartPage.clickCheckout();
@@ -46,7 +46,7 @@ describe('Shopping Cart', () => {
 
         checkoutPage.clickContinue()
 
-        cartPage.verifyCartItemsCount(inventoryItemsNameText.length());
+        cartPage.verifyCartItemsCount(inventoryItemsNameText.length);
         cartPage.verifyCartItemNames(inventoryItemsNameText);
     }); 
 });
