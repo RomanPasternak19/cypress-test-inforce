@@ -1,8 +1,7 @@
 {
-    "baseUrl": "https://www.saucedemo.com/",
     "completeHeaderText": "Thank you for your order!",
     "completeInfoText": "Your order has been dispatched, and will arrive just as fast as the pony can get there!",
-    "completePageRoute": "checkout-complete.html",
+    "completePageRoute": "https://www.saucedemo.com/checkout-complete.html",
     "invalidPassword": "invalid_password",
     "invalidUsername": "invalid_user",
     "invalidUserErrorText": "Username and password do not match any user in this service",
@@ -14,7 +13,7 @@
     "lockedUsername": "locked_out_user",
     "loginPageLogoText": "Swag Labs",
     "mainPageLogoText": "Swag Labs",
-    "mainPageRoute": "inventory.html",
+    "mainPageRoute": "https://www.saucedemo.com/inventory.html",
     "placeholderPasswordText": "Password",
     "placeholderUsernameText": "Username",
     "somePassword": "some_password",
